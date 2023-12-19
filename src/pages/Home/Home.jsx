@@ -21,6 +21,7 @@ function HomePage() {
         draggable:true,
         swipe:true,
         touchThreshold:100,
+        touchMove:true,
 
     };
     const navigateTo = useNavigate()
