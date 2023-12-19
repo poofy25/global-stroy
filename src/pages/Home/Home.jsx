@@ -16,7 +16,6 @@ function HomePage() {
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
-        swipeToSlide: true,
         arrows:false,
         draggable:true,
         swipe:true,
