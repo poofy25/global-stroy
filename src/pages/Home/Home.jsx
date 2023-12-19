@@ -9,16 +9,17 @@ function HomePage() {
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
         vertical: true,
         verticalSwiping: true,
-        beforeChange: function(currentSlide, nextSlide) {
-          console.log("before change", currentSlide, nextSlide);
-        },
-        afterChange: function(currentSlide) {
-          console.log("after change", currentSlide);
-        }
+        swipeToSlide: true,
+        arrows:false,
+        draggable:true,
+        fade:true,
+        swipe:true,
+        touchThreshold:3,
+
       };
 
 
