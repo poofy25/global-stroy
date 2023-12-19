@@ -4,6 +4,9 @@ import Slider from 'react-slick';
 import heroimg from '/src/assets/hero.png'
 
 
+import { useNavigate } from 'react-router-dom';
+
+
 function HomePage() {
 
     const settings = {
@@ -16,11 +19,11 @@ function HomePage() {
         swipeToSlide: true,
         arrows:false,
         draggable:true,
-        fade:true,
         swipe:true,
         touchThreshold:100,
 
-      };
+    };
+    const navigateTo = useNavigate()
 
 
 
@@ -35,15 +38,19 @@ function HomePage() {
           <div className={styles.section}>
             <img src={heroimg}/>
             <h3>1</h3>
+            <a href='/lucrari'>Vezi Lucrarile Noastre</a>
           </div>
           <div className={styles.section}>
             <h3>2</h3>
+            <a href='/lucrari'>Vezi Lucrarile Noastre</a>
           </div>
           <div className={styles.section}>
             <h3>3</h3>
+            <a href='/lucrari'>Vezi Lucrarile Noastre</a>
           </div>
           <div className={styles.section}>
             <h3>4</h3>
+            <a href='/lucrari'>Vezi Lucrarile Noastre</a>
           </div>
           
         </Slider>
