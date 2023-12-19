@@ -18,7 +18,7 @@ function HomePage() {
         draggable:true,
         fade:true,
         swipe:true,
-        touchThreshold:3,
+        touchThreshold:15,
 
       };
 
