@@ -1,0 +1,116 @@
+.menu {
+    width: 100%;
+    position: fixed;
+    height: 100%;
+    transform: translateX(100%);
+    background-color: rgba(0,0,0,0.5);
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    transition: 0.25s ease-in-out;
+    z-index: 1;
+}
+.menu.active{
+    transform: translateX(0%);
+}
+.menuContent {
+    width: 300px;
+    height: 100%;
+    background-color: #f7f7f7;
+    padding-top: calc(5rem - 1px);
+    box-sizing: border-box;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.menuContent > a {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    border-top: 1px solid rgba(0,0,0,0.25);
+    padding-left: 25px;
+    color: #1E1C1C;
+    text-decoration: none;
+}
+.lasta{
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+}
+.menuContent > span {
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    padding: 0.5rem;
+    padding-left: 25px;
+    box-sizing: border-box;
+    align-items: center;
+}
+.menuContent > span > a {
+    color: #1E1C1C;
+    text-decoration: none;
+}
+.menuContent > span:hover{
+    color: #4F7FBE;
+}
+.menuContent > span > img {
+    width: 1.5rem;
+    margin-right: 1rem;
+    filter: invert(47%) sepia(53%) saturate(468%) hue-rotate(174deg) brightness(90%) contrast(96%);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+.social{
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.social > img{
+    width: 2rem;
+    margin-right: 1rem;
+    filter: invert(47%) sepia(53%) saturate(468%) hue-rotate(174deg) brightness(90%) contrast(96%);
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+
+.languages{
+    width: 100%;
+    padding: 1rem;
+    padding-left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+.languages > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    font-weight: 700;
+    opacity: 0.9;
+    background-color:#1E1C1C;
+    color: #f7f7f7;
+    border: 1px solid rgba(0,0,0,0.5);
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.languages > button.active{
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+.languages > button > img {
+    width: 1.5rem;
+    margin-right: 0.5rem;
+
+}
