@@ -7,7 +7,7 @@ import heroimg from '/src/assets/hero.png'
 function HomePage() {
 
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
