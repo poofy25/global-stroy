@@ -14,6 +14,18 @@ function NavBar() {
     const menuBtnHandler = ()=>{
         setMenuActive(!menuActive)
     }
+
+
+    useEffect(()=>{
+
+        
+        if(menuActive){
+            document.querySelector(`.${styles.menuBtn}`).style.filter = 'invert()'
+        }else{
+            document.querySelector(`.${styles.menuBtn}`).style.filter = ''
+        }
+
+    },[menuActive])
    
 
 

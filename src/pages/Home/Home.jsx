@@ -8,7 +8,7 @@ import heroimg4 from '/src/assets/home_4.png'
 
 
 import { useNavigate } from 'react-router-dom';
-
+import { useEffect } from 'react';
 
 function HomePage() {
 
@@ -31,7 +31,6 @@ function HomePage() {
 
 
 
-
     
     return ( 
 
@@ -46,17 +45,17 @@ function HomePage() {
           </div>
           <div className={styles.section}>
           <img src={heroimg2}/>
-            <h3>2</h3>
+            <h2>Efectuarea reparățiilor de interior și dizain a casei tale.</h2>
             <a href='/lucrari'>Lucrarile Noastre</a>
           </div>
           <div className={styles.section}>
           <img src={heroimg3}/>
-            <h3>3</h3>
+            <h2>Ajutor în alegerea unei opțiuni corespunzătoare dumneavoastră.</h2>
             <a href='/lucrari'>Lucrarile Noastre</a>
           </div>
           <div className={styles.section}>
           <img src={heroimg4}/>
-            <h3>4</h3>
+            <h2>Global-Stroy execută reparații profesionale de calitate înaltă și prețuri accesibile, servind clienții cu profesionalism.</h2>
             <a href='/lucrari'>Lucrarile Noastre</a>
           </div>
           
