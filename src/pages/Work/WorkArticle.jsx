@@ -6,7 +6,7 @@ import workContent from './workContent';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-import bussinesImg from '/src/assets/img/bussiness.png'
+import Footer from '../../components/Footer/Footer';
 
 function WorkArticle({setNavStatus}) {
 
@@ -18,6 +18,7 @@ function WorkArticle({setNavStatus}) {
     },[])
 
     return ( 
+        <>
         <section className={styles.article}>
             <header className={styles.header}>
             <img src={data.img[0]}/>
@@ -29,6 +30,8 @@ function WorkArticle({setNavStatus}) {
                 )
             })}
         </section>
+        <Footer/>
+        </>
      );
 }
 

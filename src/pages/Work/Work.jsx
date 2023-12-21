@@ -3,18 +3,19 @@ import { useEffect } from 'react';
 
 import workContent from './workContent';
 import banner from '/src/assets/img/banner.png'
-
+import Footer from '../../components/Footer/Footer';
 
 function WorkPage({setNavStatus}) {
     useEffect(()=>{
         setNavStatus(false)
-      },[])
+    },[])
     return ( 
+        <>
         <section className={styles.section}>
-             <header className={styles.header}>
+            <header className={styles.header}>
                 <img src={banner}/>
                 <h1>Avem cele mai mici preturi la materiale de constructie!</h1>
-                </header>
+            </header>
             {
                 Object.keys(workContent).map((key, index) => {
                     const article = workContent[key]
@@ -28,6 +29,8 @@ function WorkPage({setNavStatus}) {
                 })
             }
         </section>
+        <Footer/>
+        </>
      );
 }
 

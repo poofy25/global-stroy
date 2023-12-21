@@ -11,9 +11,15 @@ import service04 from '/src/assets/img/services/services_04.png'
 import service05 from '/src/assets/img/services/services_05.png'
 import service06 from '/src/assets/img/services/services_06.png'
 
+import { useEffect } from 'react';
 
-function ServicesPage() {
+import Footer from '../../components/Footer/Footer';
+function ServicesPage({setNavStatus}) {
+    useEffect(()=>{
+        setNavStatus(false)
+    },[])
     return ( 
+        <>
         <section className={styles.section}>
              <header className={styles.header}>
                 <img src={banner}/>
@@ -22,7 +28,7 @@ function ServicesPage() {
             </header>
             <LazyLoadComponent>
             <article className={styles.article}>
-                <a href='/servicii/lucrari-decorative'>
+                <a href='/servicii/asezarea-teracotei'>
                     <img src={service01}/>
                     <h2>Asezarea Teracotei</h2>
                     <p>Mai Multe Detalii...</p>
@@ -75,6 +81,8 @@ function ServicesPage() {
             </article>
             </LazyLoadComponent>
         </section>
+        <Footer/>
+        </>
      );
 }
 
