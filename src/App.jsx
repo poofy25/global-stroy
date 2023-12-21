@@ -3,7 +3,7 @@ import NavBar from './components/Navbar/NavBar'
 import LoadingComponent from './components/Loading/Loading'
 import HomePage from './pages/Home/Home'
 import WorkPage from './pages/Work/Work'
-
+import WorkArticle from './pages/Work/WorkArticle'
 
 import { BrowserRouter , Route , Routes } from 'react-router-dom'
 import { Suspense } from 'react'
@@ -26,6 +26,7 @@ function App() {
   <Route path="/" element={<Suspense fallback={<LoadingComponent/>}><HomePage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>} />
   <Route path="/acasa" element={<Suspense fallback={<LoadingComponent/>}><HomePage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
   <Route path="/lucrari" element={<Suspense fallback={<LoadingComponent/>}><WorkPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
+  <Route path="/lucrari/:id" element={<Suspense fallback={<LoadingComponent/>}><WorkArticle navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
   
 </Routes>
 

@@ -28,14 +28,6 @@ function NavBar({navStatus}) {
     },[menuActive])
 
 
-    useEffect(()=>{
-        if(navStatus){
-
-        }else{
-
-        }
-    },[navStatus])
-   
 
 
     return ( 

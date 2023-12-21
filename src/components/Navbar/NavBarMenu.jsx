@@ -35,7 +35,7 @@ function NavBarMenu({status , setStatus , language , setLanguage , langJson}) {
             <section className={styles.menuContent}>
             <span className={styles.call}><a href='tel:+37360927221'><p>060927221</p> <span><img src={callIcon}/></span></a></span>
             <a onClick={()=>{setStatus(!status)}} href='/acasa'>Acasa</a>
-            <a onClick={()=>{setStatus(!status)}} href='/lucrari'>Lucrari</a>
+            <a onClick={()=>{setStatus(!status)}} href='/lucrari'>Lucrarile Noastre</a>
             <a onClick={()=>{setStatus(!status)}} href='/servicii'>Servicii</a>
             <a onClick={()=>{setStatus(!status)}} href='/despre'>Despre Companie</a>
             <a onClick={()=>{setStatus(!status)}} className={styles.lasta} href='/contact'>Contacte</a>

@@ -2,7 +2,7 @@ import styles from './work.module.css'
 import { useEffect } from 'react';
 
 import workContent from './workContent';
-
+import banner from '/src/assets/img/banner.png'
 
 
 function WorkPage({setNavStatus}) {
@@ -11,7 +11,10 @@ function WorkPage({setNavStatus}) {
       },[])
     return ( 
         <section className={styles.section}>
-            
+             <header className={styles.header}>
+                <img src={banner}/>
+                <h1>Avem cele mai mici preturi la materiale de constructie!</h1>
+                </header>
             {
                 Object.keys(workContent).map((key, index) => {
                     const article = workContent[key]
