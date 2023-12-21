@@ -12,7 +12,6 @@ function NavBarMenu({status , setStatus , language , setLanguage , langJson}) {
     useEffect(()=>{
         const menu = document.querySelector(`.${styles.menu}`)
         if(menu){
-            console.log(status , menu)
             if(status){
                 menu.classList.add(`${styles.active}`)
             }else{
@@ -22,8 +21,9 @@ function NavBarMenu({status , setStatus , language , setLanguage , langJson}) {
     },[status])
 
     const menuClick = (e)=>{
-        if(e.target !== document.querySelector(`.${styles.menuContent}`
-        )){
+        if(e.target == e.currentTarget
+        ){
+            console.log(e.target , e.currentTarget)
             setStatus(false)
         }
     }
@@ -33,7 +33,7 @@ function NavBarMenu({status , setStatus , language , setLanguage , langJson}) {
         <section onClick={menuClick} className={styles.menu}>
 
             <section className={styles.menuContent}>
-            <a className={styles.call}><p>060927221</p> <span><img src={callIcon}/></span></a>
+            <span className={styles.call}><a href='tel:+37360927221'><p>060927221</p> <span><img src={callIcon}/></span></a></span>
             <a onClick={()=>{setStatus(!status)}} href='/acasa'>Acasa</a>
             <a onClick={()=>{setStatus(!status)}} href='/lucrari'>Lucrari</a>
             <a onClick={()=>{setStatus(!status)}} href='/servicii'>Servicii</a>

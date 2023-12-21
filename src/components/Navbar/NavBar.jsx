@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react'
 
 import logo from '/src/assets/logo_3.png'
 
-function NavBar() {
+function NavBar({navStatus}) {
 
 
     const [menuActive , setMenuActive] = useState(false)
@@ -19,18 +19,27 @@ function NavBar() {
     useEffect(()=>{
 
         
-        if(menuActive){
+        if(menuActive && navStatus){
             document.querySelector(`.${styles.menuBtn}`).style.filter = 'invert()'
         }else{
             document.querySelector(`.${styles.menuBtn}`).style.filter = ''
         }
 
     },[menuActive])
+
+
+    useEffect(()=>{
+        if(navStatus){
+
+        }else{
+
+        }
+    },[navStatus])
    
 
 
     return ( 
-        <nav className={styles.none}>
+        <nav className={navStatus ? `${styles.none} ${styles.true}` : `${styles.none}`} >
             <section className={styles.logoBar}><img alt='Logo' src={logo}/></section>
             <section className={styles.navigationBar}>
                

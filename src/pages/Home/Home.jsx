@@ -10,7 +10,7 @@ import heroimg4 from '/src/assets/home_4.png'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
 
-function HomePage() {
+function HomePage({navStatus , setNavStatus}) {
 
     const settings = {
         dots: false,
@@ -29,7 +29,9 @@ function HomePage() {
     };
     const navigateTo = useNavigate()
 
-
+    useEffect(()=>{
+      setNavStatus(true)
+    },[])
 
     
     return ( 

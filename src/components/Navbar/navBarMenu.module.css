@@ -19,7 +19,6 @@
     width: 300px;
     height: 100%;
     background-color: transparent;
-    padding-top: calc(5rem - 1px);
     box-sizing: border-box;
     display: flex;
     align-items: start;
@@ -41,32 +40,40 @@
     content: '';
 }
 .call{
+  position: relative;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+.call > a {
     display: flex;
     align-items: center;
     width: fit-content !important;
     border-radius: 99px;
-    margin-left: 25px;
     padding: 0rem !important;
     overflow: hidden;
     border: 1px solid black !important;
-    top: 0;
-    margin-bottom: 1rem;
-    left: 0;
+    position: relative;
 }
-.call > p {
+.call > a > p {
     margin: 0.5rem 1rem;
     font-size: 0.9rem;
     font-weight: 600;
+
+
 }
-.call > span {
+.call > a > span {
     padding: 0rem 1rem;
     background-color: #1E1C1C;
-    height: 100%;
+    height:min-content;
+    height: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.call > span > img {
+.call > a > span > img {
     width: 1.25rem;
     filter: invert();
 }

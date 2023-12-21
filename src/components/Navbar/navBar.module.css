@@ -30,7 +30,6 @@ nav.small > .logoBar::before{
 .logoBar > img{
     height: 100%;
     border-radius: 32px;
-    filter: invert() brightness(100);
 
 }
 
@@ -44,7 +43,6 @@ nav.small > .logoBar::before{
 
 
 .navigationBar {
-    background-color:transparent;
     color: #1E1C1C;
     padding-left: calc(25% + 60px);
     padding-right: 60px;
@@ -52,9 +50,9 @@ nav.small > .logoBar::before{
     height: 5rem;
     display: flex;
     align-items: center;
-    background: rgb(30,28,28);
-background: linear-gradient(180deg, rgba(30,28,28,0.5) 0%, rgba(0,212,255,0) 100%);
-
+   
+background: none;
+background-color: #f7f7f7 ;
     
 }
 .navigationBar > a {
@@ -118,9 +116,22 @@ background: linear-gradient(180deg, rgba(30,28,28,0.5) 0%, rgba(0,212,255,0) 100
 .menuBtn > div {
     width: 100%;
     height: 2px;
-    background-color: #f7f7f7;
+    background-color: #1E1C1C;
     border-radius: 999px;
 }
+
+nav.true .logoBar > img{
+    filter: invert() brightness(100);
+}
+nav.true .navigationBar {
+    background: rgb(30,28,28);
+background: linear-gradient(180deg, rgba(30,28,28,0.5) 0%, rgba(0,212,255,0) 100%);
+}
+nav.true .navigationBar .menuBtn > div{
+    background-color: #f7f7f7 ;
+}
+
+
 
 @media only screen and (min-width: 0px) and (max-width:640px) {
 
