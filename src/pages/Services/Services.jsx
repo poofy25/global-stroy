@@ -28,55 +28,55 @@ function ServicesPage({setNavStatus}) {
             </header>
             <LazyLoadComponent>
             <article className={styles.article}>
-                <a href='/servicii/asezarea-teracotei'>
+            <a href='/contact'>
                     <img src={service01}/>
                     <h2>Asezarea Teracotei</h2>
-                    <p>Mai Multe Detalii...</p>
+                    <p>Contacteaza-ne pentru mai multe detalii...</p>
                 </a>
             </article>
             </LazyLoadComponent>
             <LazyLoadComponent>
             <article className={styles.article}>
-                <a href='/servicii/tencuiala'>
+            <a href='/contact'>
                     <img src={service02} />
                     <h2>Tencuială</h2>
-                    <p>Mai Multe Detalii...</p>
+                    <p>Contacteaza-ne pentru mai multe detalii...</p>
                 </a>
             </article>
             </LazyLoadComponent>
             <LazyLoadComponent>
             <article className={styles.article}>
-                <a href='/serviciis/sapa'>
+            <a href='/contact'>
                     <img src={service03}/>
                     <h2>Șapă</h2>
-                    <p>Mai Multe Detalii...</p>
+                    <p>Contacteaza-ne pentru mai multe detalii...</p>
                 </a>
             </article>
             </LazyLoadComponent>
             <LazyLoadComponent>
              <article className={styles.article}>
-                <a href='/servicii/instalatii-sanitare'>
+             <a href='/contact'>
                     <img src={service04}/>
                     <h2>Instalații sanitare</h2>
-                    <p>Mai Multe Detalii...</p>
+                    <p>Contacteaza-ne pentru mai multe detalii...</p>
                 </a>
             </article>
             </LazyLoadComponent>
             <LazyLoadComponent>
             <article className={styles.article}>
-                <a href='/servicii/reteua-electrica'>
+            <a href='/contact'>
                     <img src={service05} />
                     <h2>Rețeua electrică</h2>
-                    <p>Mai Multe Detalii...</p>
+                    <p>Contacteaza-ne pentru mai multe detalii...</p>
                 </a>
             </article>
             </LazyLoadComponent>
             <LazyLoadComponent>
             <article className={styles.article}>
-                <a href='/servicii/decorarea-peretilor'>
+                <a href='/contact'>
                     <img src={service06} />
                     <h2>Decorarea pereților</h2>
-                    <p>Mai Multe Detalii...</p>
+                    <p>Contacteaza-ne pentru mai multe detalii...</p>
                 </a>
             </article>
             </LazyLoadComponent>

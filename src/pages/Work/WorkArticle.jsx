@@ -19,14 +19,14 @@ function WorkArticle({setNavStatus}) {
 
     return ( 
         <>
-        <section className={styles.article}>
+        <section className={styles.section}>
             <header className={styles.header}>
             <img src={data.img[0]}/>
             <h3>{data.name}</h3>
             </header>
             {data.img.map((image , index)=>{
                 return(
-                    <a href={image} target='_blank'><LazyLoadImage src={image} effect='blur'/></a>
+                    <a href={image} className={styles.article} target='_blank'><img src={image}/></a>
                 )
             })}
         </section>

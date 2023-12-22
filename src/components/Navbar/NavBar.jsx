@@ -5,6 +5,8 @@ import NavBarMenu from './NavBarMenu'
 import { useEffect, useState } from 'react'
 
 import logo from '/src/assets/logo_3.png'
+import callIcon from '/src/assets/svg/call.svg'
+
 
 function NavBar({navStatus}) {
 
@@ -32,9 +34,11 @@ function NavBar({navStatus}) {
 
     return ( 
         <nav className={navStatus ? `${styles.none} ${styles.true}` : `${styles.none}`} >
-            <section className={styles.logoBar}><img alt='Logo' src={logo}/></section>
+            <section className={styles.logoBar}><a><img alt='Logo' src={logo}/></a></section>
             <section className={styles.navigationBar}>
-               
+                {window.innerWidth > 994 &&
+                <span className={styles.call}><a href='tel:+37360927221'> <span><img src={callIcon}/></span><p>060927221</p></a></span>
+                }
                 <button aria-label='Menu' onClick={menuBtnHandler} className={styles.menuBtn}>
                     <div></div>
                     <div></div>
