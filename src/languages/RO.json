@@ -1,0 +1,47 @@
+{
+    "nav":{
+        "menu":{
+            "home":"Acasă",
+            "work":"Lucrările Noastre",
+            "services":"Servicii",
+            "about":"Despre Companie",
+            "contact":"Contacte"
+        }
+    },
+    "home":{
+        "slide1":"REPARAȚIA APARTAMENTELOR LA CHEIE",
+        "slide2":"Efectuarea reparățiilor de interior și design a casei tale.",
+        "slide3":"Ajutor în alegerea unei opțiuni corespunzătoare dumneavoastră.",
+        "slide4":"Oferim reduceri la materiale până la 25%",
+        "btn":"Lucările Noastre"
+    },
+    "work":{
+        "header":"Oferim reduceri la materiale până la 25%"
+    },
+    "services":{
+        "header":"Servicii",
+        "articleSublineText":"Contactează-ne pentru detalii...",
+        "article1":"Așezarea Teracotei",
+        "article2":"Tencuială",
+        "article3":"Șapă",
+        "article4":"Instalații Sanitare",
+        "article5":"Rețele Electrice",
+        "article6":"Decorarea Pereților",
+        "article7":"Montarea Riflagelor"
+    },
+    "about":{
+        "header":"Reparația caselor și apartamentelor în Chișinău, Moldova.",
+        "paragraph1":"Echipă de profesioniști, efectuam lucrări de reparație de 10 ani în toate orașele din Moldova.",
+        "paragraph2":"Lucrările sunt efectuate calitativ și la timp.",
+        "paragraph3":"Elaborăm plan strategic de lucru, care se îndeplinește conform cerințelor clienților.",
+        "paragraph4":"Efectuam lucrări de decor, finish, încălzire, montare, etc.",
+        "paragraph5":"Oferim 30% reducere la materialele."
+    },
+    "contact":{
+        "header":"Contacte",
+        "title":"Manager De Proiect"
+    },
+    "footer":{
+        "contactBtn":"Contacte"
+    }
+}

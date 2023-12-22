@@ -7,8 +7,11 @@ import heroimg3 from '/src/assets/home_3.png'
 import heroimg4 from '/src/assets/home_4.png'
 
 
-import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+
+import { useLocation } from 'react-router-dom';
+import { getTranslation } from '../../languages/languages.js';
+import { getLangFromUrl } from '../../functions/getLangFromUrl';
 
 function HomePage({navStatus , setNavStatus}) {
 
@@ -27,11 +30,16 @@ function HomePage({navStatus , setNavStatus}) {
         fade:true,
 
     };
-    const navigateTo = useNavigate()
+    const translation = getTranslation(getLangFromUrl()).home
+    const location = useLocation()
+
+
 
     useEffect(()=>{
       setNavStatus(true)
     },[])
+    useEffect(()=>{
+    },[location])
 
     
     return ( 
@@ -42,23 +50,23 @@ function HomePage({navStatus , setNavStatus}) {
         <Slider {...settings}>
           <div className={styles.section}>
             <img src={heroimg1}/>
-            <h1>REPARAȚIA APARTAMENTELOR LA CHEIE</h1>
-            <a href='/lucrari'>Lucrarile Noastre</a>
+            <h1>{translation.slide1}</h1>
+            <a href='/lucrari'>{translation.btn}</a>
           </div>
           <div className={styles.section}>
           <img src={heroimg2}/>
-            <h2>Efectuarea reparățiilor de interior și dizain a casei tale.</h2>
-            <a href='/lucrari'>Lucrarile Noastre</a>
+            <h1>{translation.slide2}</h1>
+            <a href='/lucrari'>{translation.btn}</a>
           </div>
           <div className={styles.section}>
           <img src={heroimg3}/>
-            <h2>Ajutor în alegerea unei opțiuni corespunzătoare dumneavoastră.</h2>
-            <a href='/lucrari'>Lucrarile Noastre</a>
+            <h1>{translation.slide3}</h1>
+            <a href='/lucrari'>{translation.btn}</a>
           </div>
           <div className={styles.section}>
           <img src={heroimg4}/>
-            <h2>Global-Stroy execută reparații profesionale de calitate înaltă și prețuri accesibile, servind clienții cu profesionalism.</h2>
-            <a href='/lucrari'>Lucrarile Noastre</a>
+            <h1>{translation.slide4}</h1>
+            <a href='/lucrari'>{translation.btn}</a>
           </div>
           
         </Slider>

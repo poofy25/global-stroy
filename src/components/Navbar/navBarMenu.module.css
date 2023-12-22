@@ -135,16 +135,16 @@
     padding: 0.5rem;
     font-weight: 700;
     opacity: 0.9;
-    background-color:#f7f7f7;
-    color: #1E1C1C;
+    background-color:#1E1C1C;
+    color: #f7f7f7;
     border: 1px solid rgba(0,0,0,0.5);
     font-size: 1rem;
     border-radius: 4px;
 }
 .languages > button.active{
     opacity: 0.5;
-    background-color:#1E1C1C;
-    color: #f7f7f7;
+    background-color:transparent;
+    color: #1E1C1C;
     transform: scale(0.9);
 }
 .languages > button > img {

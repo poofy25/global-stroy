@@ -16,6 +16,7 @@ import { useEffect , useState } from 'react'
 function App() {
 
   const [navStatus , setNavStatus] = useState(true)
+  const [language , setLanguage] = useState("RO")
 
   useEffect(()=>{
     console.log(navStatus)
@@ -35,9 +36,19 @@ function App() {
   <Route path="/despre" element={<Suspense fallback={<LoadingComponent/>}><AboutPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
   <Route path="/contact" element={<Suspense fallback={<LoadingComponent/>}><ContactPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
   
+
+  <Route path="/:lang/" element={<Suspense fallback={<LoadingComponent/>}><HomePage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>} />
+  <Route path="/:lang/acasa" element={<Suspense fallback={<LoadingComponent/>}><HomePage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
+  <Route path="/:lang/lucrari" element={<Suspense fallback={<LoadingComponent/>}><WorkPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
+  <Route path="/:lang/lucrari/:id" element={<Suspense fallback={<LoadingComponent/>}><WorkArticle navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
+  <Route path="/:lang/servicii" element={<Suspense fallback={<LoadingComponent/>}><ServicesPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
+  <Route path="/:lang/servicii/:id" element={<Suspense fallback={<LoadingComponent/>}><ServicesPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
+  <Route path="/:lang/despre" element={<Suspense fallback={<LoadingComponent/>}><AboutPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
+  <Route path="/:lang/contact" element={<Suspense fallback={<LoadingComponent/>}><ContactPage navStatus={navStatus} setNavStatus={setNavStatus} /></Suspense>}/>
 </Routes>
 
-<NavBar navStatus={navStatus}/>
+
+<NavBar navStatus={navStatus} language={language} setLanguage={setLanguage}/>
 
 </BrowserRouter>
     </>

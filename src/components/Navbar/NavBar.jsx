@@ -8,7 +8,7 @@ import logo from '/src/assets/logo_3.png'
 import callIcon from '/src/assets/svg/call.svg'
 
 
-function NavBar({navStatus}) {
+function NavBar({navStatus , language , setLanguage}) {
 
 
     const [menuActive , setMenuActive] = useState(false)
@@ -47,7 +47,7 @@ function NavBar({navStatus}) {
         
                 
             </section>
-            <NavBarMenu status={menuActive} setStatus={setMenuActive} />
+            <NavBarMenu status={menuActive} setStatus={setMenuActive} language={language} setLanguage={setLanguage}/>
         </nav>
      );
 }

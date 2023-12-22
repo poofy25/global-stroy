@@ -29,6 +29,18 @@ function WorkArticle({setNavStatus}) {
                     <a href={image} className={styles.article} target='_blank'><img src={image}/></a>
                 )
             })}
+            {
+                data?.vid && 
+                data?.vid.map((vid , index)=>{
+                    return(
+                        <a href={vid} className={`${styles.article} ${styles.video}`} target='_blank'>
+                            <video  controls autoPlay muted loop>
+                            <source src={vid} type="video/mp4"/>
+                            </video> 
+                        </a>
+                    )
+                })
+            }
         </section>
         <Footer/>
         </>

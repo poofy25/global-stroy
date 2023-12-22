@@ -1,11 +1,23 @@
 import styles from './work.module.css'
-import { useEffect } from 'react';
 
 import workContent from './workContent';
 import banner from '/src/assets/img/banner.png'
 import Footer from '../../components/Footer/Footer';
 
+import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
+import { getTranslation } from '../../languages/languages.js';
+import { getLangFromUrl } from '../../functions/getLangFromUrl';
+
+
+
 function WorkPage({setNavStatus}) {
+
+    const translation = getTranslation(getLangFromUrl()).work
+    const location = useLocation()
+    useEffect(()=>{
+    },[location])
+
     useEffect(()=>{
         setNavStatus(false)
     },[])
@@ -14,7 +26,7 @@ function WorkPage({setNavStatus}) {
         <section className={styles.section}>
             <header className={styles.header}>
                 <img src={banner}/>
-                <h1>Avem cele mai mici preturi la materiale de constructie!</h1>
+                <h1>{translation.header}</h1>
             </header>
             {
                 Object.keys(workContent).map((key, index) => {

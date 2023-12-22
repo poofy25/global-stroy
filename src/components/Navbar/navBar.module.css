@@ -115,6 +115,7 @@ nav.small > .logoBar::before{
     background-color: transparent;
     border: none;
     z-index: 999;
+    cursor: pointer;
 }
 .menuBtn > div {
     width: 100%;

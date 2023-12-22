@@ -18,9 +18,14 @@ import socoleni15_01 from '/src/assets/img/work/socoleni15_01.png'
 import socoleni15_02 from '/src/assets/img/work/socoleni15_02.png'
 import socoleni15_03 from '/src/assets/img/work/socoleni15_03.png'
 
+import mircea_cel_batran_41_img from '/src/assets/img/work/mircea-cel-batran-41.png'
+import mircea_cel_batran_41_vid from '/src/assets/img/work/mircea-cel-batran-41.mp4'
+
+
+
 const workContent = {
     "Albisoara-80-4":{
-        name:'Albisoara 80/4',
+        name:'Albișoara 80/4',
         img:[albisoara804_05 , albisoara804_02 , albisoara804_03 , albisoara804_04 , albisoara804_01 , albisoara804_06 , albisoara804_07 , albisoara804_08]
     },
     "Liviu-Deleanu":{
@@ -30,6 +35,11 @@ const workContent = {
     "Socoleni-15":{
         name:'Socoleni 15',
         img:[socoleni15_02 , socoleni15_01 , socoleni15_03]
+    },
+    "Mircea-cel-Batran-41":{
+        name:'Mircea cel Bătrân 41',
+        img:[mircea_cel_batran_41_img],
+        vid:[mircea_cel_batran_41_vid]
     }
 }
 
