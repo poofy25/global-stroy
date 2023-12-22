@@ -33,14 +33,14 @@ function ServicesPage({setNavStatus}) {
         <>
         <section className={styles.section}>
              <header className={styles.header}>
-                <img src={banner}/>
+                <img src={banner} alt='Complex Apartament Banner'/>
                 <h2>{translation.header}</h2>
                 <h3>Global Stroy</h3>
             </header>
             <LazyLoadComponent>
             <article className={styles.article}>
             <a href='/contact'>
-                    <img src={service01}/>
+                    <img src={service01} alt='Așezarea Teracotei'/>
                     <h2>{translation.article1}</h2>
                     <p>{translation.articleSublineText}</p>
                 </a>
@@ -49,17 +49,17 @@ function ServicesPage({setNavStatus}) {
             <LazyLoadComponent>
             <article className={styles.article}>
             <a href='/contact'>
-                    <img src={service02} />
-                    <h2>{translation.article1}</h2>
-                    <p>{translation.articleSublineText}</p>
-                </a>
-            </article>
-            </LazyLoadComponent>
-            <LazyLoadComponent>
-            <article className={styles.article}>
-            <a href='/contact'>
-                    <img src={service03}/>
+                    <img src={service02} alt='Tencuială' />
                     <h2>{translation.article2}</h2>
+                    <p>{translation.articleSublineText}</p>
+                </a>
+            </article>
+            </LazyLoadComponent>
+            <LazyLoadComponent>
+            <article className={styles.article}>
+            <a href='/contact'>
+                    <img src={service03} alt='Șapă'/>
+                    <h2>{translation.article3}</h2>
                     <p>{translation.articleSublineText}</p>
                 </a>
             </article>
@@ -67,8 +67,8 @@ function ServicesPage({setNavStatus}) {
             <LazyLoadComponent>
              <article className={styles.article}>
              <a href='/contact'>
-                    <img src={service04}/>
-                    <h2>{translation.article3}</h2>
+                    <img src={service04} alt='Instalații Sanitare'/>
+                    <h2>{translation.article4}</h2>
                     <p>{translation.articleSublineText}</p>
                 </a>
             </article>
@@ -76,7 +76,7 @@ function ServicesPage({setNavStatus}) {
             <LazyLoadComponent>
             <article className={styles.article}>
             <a href='/contact'>
-                    <img src={service05} />
+                    <img src={service05} alt='Rețele Electrice' />
                     <h2>{translation.article5}</h2>
                     <p>{translation.articleSublineText}</p>
                 </a>
@@ -85,7 +85,7 @@ function ServicesPage({setNavStatus}) {
             <LazyLoadComponent>
             <article className={styles.article}>
                 <a href='/contact'>
-                    <img src={service06} />
+                    <img src={service06} alt='Decorarea Pereților' />
                     <h2>{translation.article6}</h2>
                     <p>{translation.articleSublineText}</p>
                 </a>
@@ -94,7 +94,7 @@ function ServicesPage({setNavStatus}) {
             <LazyLoadComponent>
             <article className={styles.article}>
                 <a href='/contact'>
-                    <img src={service07} />
+                    <img src={service07} alt='Montarea Riflagelor' />
                     <h2>{translation.article7}</h2>
                     <p>{translation.articleSublineText}</p>
                 </a>

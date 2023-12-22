@@ -22,7 +22,7 @@ function AboutPage({setNavStatus}) {
         <>
         <section className={styles.section}>
             <header className={styles.header}>
-                <img src={banner}/>
+                <img src={banner} alt='Banner'/>
                 <h1>{translation.header}</h1>
                 <h3>Global Stroy</h3>
             </header>

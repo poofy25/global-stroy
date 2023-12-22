@@ -38,7 +38,7 @@ function NavBar({navStatus , language , setLanguage}) {
             <section className={styles.logoBar}><a href={`/${getLangFromUrl()}`}><img alt='Logo' src={logo}/></a></section>
             <section className={styles.navigationBar}>
                 {window.innerWidth > 994 &&
-                <span className={styles.call}><a href='tel:+37360927221'> <span><img src={callIcon}/></span><p>060927221</p></a></span>
+                <span className={styles.call}><a href='tel:+37360927221'> <span><img alt='call icon' src={callIcon}/></span><p>060927221</p></a></span>
                 }
                 <button aria-label='Menu' onClick={menuBtnHandler} className={styles.menuBtn}>
                     <div></div>

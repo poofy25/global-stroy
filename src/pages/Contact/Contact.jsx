@@ -25,7 +25,7 @@ function ContactPage({setNavStatus}) {
         <>
         <section className={styles.section}>
             <header className={styles.header}>
-                <img src={banner}/>
+                <img src={banner} alt='Banner'/>
                 <h2>{translation.header}</h2>
                 <h3>Global Stroy</h3>
             </header>           
@@ -33,8 +33,8 @@ function ContactPage({setNavStatus}) {
             <article>
                 <h3>Dumitru Ignat</h3>
                 <p>{translation.title}</p>
-                <span className={styles.call}><a href='tel:+37360927221'> <span><img src={callIcon}/></span><p>060927221</p></a></span>
-                <span className={styles.call}><a href='mailto:global-stroy@internet.ru'> <span><img src={emailIcon}/></span><p>global-stroy@internet.ru</p></a></span>
+                <span className={styles.call}><a href='tel:+37360927221'> <span><img alt='call icon' src={callIcon}/></span><p>060927221</p></a></span>
+                <span className={styles.call}><a href='mailto:global-stroy@internet.ru'> <span><img alt='email icon' src={emailIcon}/></span><p>global-stroy@internet.ru</p></a></span>
 
             </article>
         </section>

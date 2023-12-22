@@ -53,7 +53,7 @@ function NavBarMenu({status , setStatus , language}) {
         <section onClick={menuClick} className={styles.menu}>
 
             <section className={styles.menuContent}>
-            <span className={styles.call}><a href='tel:+37360927221'><p>060927221</p> <span><img src={callIcon}/></span></a></span>
+            <span className={styles.call}><a href='tel:+37360927221'><p>060927221</p> <span><img alt='call icon' src={callIcon}/></span></a></span>
             <a onClick={()=>{setStatus(!status)}} href={`/${getLangFromUrl()}/acasa`}>{translation.home}</a>
             <a onClick={()=>{setStatus(!status)}} href={`/${getLangFromUrl()}/lucrari`}>{translation.work}</a>
             <a onClick={()=>{setStatus(!status)}} href={`/${getLangFromUrl()}/servicii`}>{translation.services}</a>

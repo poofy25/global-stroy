@@ -25,7 +25,7 @@ function WorkPage({setNavStatus}) {
         <>
         <section className={styles.section}>
             <header className={styles.header}>
-                <img src={banner}/>
+                <img src={banner} alt='Banner'/>
                 <h1>{translation.header}</h1>
             </header>
             {
@@ -33,7 +33,7 @@ function WorkPage({setNavStatus}) {
                     const article = workContent[key]
                     return(
                         <a href={`/lucrari/${key}`} className={styles.article} key={index}>
-                        <img src={article.img[0]}/>
+                        <img src={article.img[0]} alt='Serviciu imagine'/>
                         <p>{article.name}</p>
                         </a>
                     )

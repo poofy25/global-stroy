@@ -8,7 +8,6 @@ import heroimg4 from '/src/assets/home_4.png'
 
 
 import { useEffect } from 'react';
-
 import { useLocation } from 'react-router-dom';
 import { getTranslation } from '../../languages/languages.js';
 import { getLangFromUrl } from '../../functions/getLangFromUrl';
@@ -32,14 +31,14 @@ function HomePage({navStatus , setNavStatus}) {
     };
     const translation = getTranslation(getLangFromUrl()).home
     const location = useLocation()
+    useEffect(()=>{
+    },[location])
 
 
 
     useEffect(()=>{
       setNavStatus(true)
     },[])
-    useEffect(()=>{
-    },[location])
 
     
     return ( 
@@ -49,22 +48,22 @@ function HomePage({navStatus , setNavStatus}) {
 
         <Slider {...settings}>
           <div className={styles.section}>
-            <img src={heroimg1}/>
+            <img src={heroimg1} alt='Apartament Interior'/>
             <h1>{translation.slide1}</h1>
             <a href='/lucrari'>{translation.btn}</a>
           </div>
           <div className={styles.section}>
-          <img src={heroimg2}/>
+          <img src={heroimg2} alt='Apartament Interior'/>
             <h1>{translation.slide2}</h1>
             <a href='/lucrari'>{translation.btn}</a>
           </div>
           <div className={styles.section}>
-          <img src={heroimg3}/>
+          <img src={heroimg3} alt='Apartament Interior'/>
             <h1>{translation.slide3}</h1>
             <a href='/lucrari'>{translation.btn}</a>
           </div>
           <div className={styles.section}>
-          <img src={heroimg4}/>
+          <img src={heroimg4} alt='Apartament Interior'/>
             <h1>{translation.slide4}</h1>
             <a href='/lucrari'>{translation.btn}</a>
           </div>
