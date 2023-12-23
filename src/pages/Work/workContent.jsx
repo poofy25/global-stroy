@@ -30,8 +30,9 @@ import mircea_cel_batran_41_vid from '/src/assets/img/work/mircea-cel-batran-41.
 
 // const negruzii_5 = import.meta.glob('/src/assets/img/work/Negruzii_5/*');
 const negruzii_5 = import.meta.glob('/src/assets/img/work/Negruzii_5/*.png', { eager: true, as: 'url' })
-const grenoblea_120 = import.meta.glob('/src/assets/img/work/Grenoblea_120/*.png');
-const grenoblea_130 = import.meta.glob('/src/assets/img/work/Grenoblea_130/*.png');
+const grenoblea_120 = import.meta.glob('/src/assets/img/work/Grenoblea_120/*.png', { eager: true, as: 'url' })
+const grenoblea_130 = import.meta.glob('/src/assets/img/work/Grenoblea_130/*.png', { eager: true, as: 'url' })
+
 
 console.log (getImgs(negruzii_5) , `/assets/${getImgs(negruzii_5)[0]}`)
 
