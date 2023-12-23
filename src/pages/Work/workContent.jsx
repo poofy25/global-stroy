@@ -1,10 +1,7 @@
 export const getImgs = (folder) => {
     const imagePaths = Object.keys(folder);
     return imagePaths;
-};
-
-
-
+  };
 
 
 
@@ -30,7 +27,8 @@ import socoleni15_03 from '/src/assets/img/work/socoleni15_03.png'
 import mircea_cel_batran_41_img from '/src/assets/img/work/mircea-cel-batran-41.png'
 import mircea_cel_batran_41_vid from '/src/assets/img/work/mircea-cel-batran-41.mp4'
 
-const negruzii_5 = import.meta.glob('/src/assets/img/work/Negruzii_5/*');
+// const negruzii_5 = import.meta.glob('/src/assets/img/work/Negruzii_5/*');
+const negruzii_5 = import.meta.glob('/src/assets/img/work/Negruzii_5/*.{png,jpg,jpeg,PNG,JPEG}', { eager: true, as: 'url' })
 const grenoblea_120 = import.meta.glob('/src/assets/img/work/Grenoblea_120/*.png');
 const grenoblea_130 = import.meta.glob('/src/assets/img/work/Grenoblea_130/*.png');
 
