@@ -25,6 +25,8 @@ const negruzii_5 = import.meta.glob('/src/assets/img/work/Negruzii_5/*.png');
 const grenoblea_120 = import.meta.glob('/src/assets/img/work/Grenoblea_120/*.png');
 const grenoblea_130 = import.meta.glob('/src/assets/img/work/Grenoblea_130/*.png');
 
+console.log (negruzii_5 , grenoblea_120 ,grenoblea_130)
+
 export const getImgs = (folder) => {
     const imagePaths = Object.keys(folder);
     return imagePaths;
