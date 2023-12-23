@@ -1,3 +1,14 @@
+export const getImgs = (folder) => {
+    const imagePaths = Object.keys(folder);
+    return imagePaths;
+};
+
+
+
+
+
+
+
 import albisoara804_01 from '/src/assets/img/work/albisoara80-4_01.png'
 import albisoara804_02 from '/src/assets/img/work/albisoara80-4_02.png'
 import albisoara804_03 from '/src/assets/img/work/albisoara80-4_03.png'
@@ -25,10 +36,7 @@ const grenoblea_130 = import.meta.glob('/src/assets/img/work/Grenoblea_130/*.png
 
 console.log (negruzii_5 , grenoblea_120 ,grenoblea_130)
 console.log (getImgs(negruzii_5) , getImgs(grenoblea_120) , getImgs(grenoblea_130))
-export const getImgs = (folder) => {
-    const imagePaths = Object.keys(folder);
-    return imagePaths;
-};
+
 
 const workContent = {
     "Albisoara-80-4":{
