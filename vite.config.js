@@ -8,5 +8,17 @@ export default defineConfig({
     alias: {
       "@assets": path.resolve(__dirname, "/src/assets"),
     },
+  }
+  ,build: {
+    rollupOptions: {
+      output: {
+        assetFileNames: (asset) => {
+          if (parse(asset.name).name === 'externalImage') {
+            return "images/src/[name][extname]";
+          }
+          return "assets/[name].[hash][extname]";
+        }
+      },
+    },
   },
 });
