@@ -1,6 +1,6 @@
 export const getImgs = (folder) => {
     const imagePaths = Object.values(folder);
-    console.log(`/assets/${imagePaths}`)
+    console.log(`/assets/${imagePaths[0]}`)
     return imagePaths;
   };
 
@@ -33,8 +33,7 @@ const negruzii_5 = import.meta.glob('/src/assets/img/work/Negruzii_5/*.png', { e
 const grenoblea_120 = import.meta.glob('/src/assets/img/work/Grenoblea_120/*.png');
 const grenoblea_130 = import.meta.glob('/src/assets/img/work/Grenoblea_130/*.png');
 
-console.log (negruzii_5 , grenoblea_120 ,grenoblea_130)
-console.log (getImgs(negruzii_5) , getImgs(grenoblea_120) , getImgs(grenoblea_130))
+console.log (getImgs(negruzii_5))
 
 
 const workContent = {
