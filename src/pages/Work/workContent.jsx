@@ -1,5 +1,6 @@
 export const getImgs = (folder) => {
-    const imagePaths = Object.keys(folder);
+    const imagePaths = Object.values(folder);
+    console.log(`/assets/${imagePaths}`)
     return imagePaths;
   };
 
