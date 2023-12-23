@@ -31,6 +31,7 @@ function WorkPage({setNavStatus}) {
             {
                 Object.keys(workContent).map((key, index) => {
                     const article = workContent[key]
+                    console.log(article , article.img , article.img[0])
                     return(
                         <a href={`/lucrari/${key}`} className={styles.article} key={index}>
                         <img src={article.img[0]} alt='Serviciu imagine'/>
