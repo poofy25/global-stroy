@@ -33,7 +33,7 @@ function WorkPage({setNavStatus}) {
                     const article = workContent[key]
                     return(
                         <a href={`/lucrari/${key}`} className={styles.article} key={index}>
-                        <img src={article.img[0]} alt='Serviciu imagine'/>
+                        <img src={article.img[0]} loading='lazy' alt='Serviciu imagine' width="600px" height="480px"/>
                         <p>{article.name}</p>
                         </a>
                     )

@@ -34,7 +34,7 @@ function NavBar({navStatus , language , setLanguage}) {
 
 
     return ( 
-        <nav className={navStatus ? `${styles.none} ${styles.true}` : `${styles.none}`} >
+        <nav className={navStatus ? `${styles.none} ${styles.truee}` : `${styles.none}`} >
             <section className={styles.logoBar}><a href={`/${getLangFromUrl()}`}><img alt='Logo' src={logo}/></a></section>
             <section className={styles.navigationBar}>
                 {window.innerWidth > 994 &&

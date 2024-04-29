@@ -15,7 +15,7 @@ function Footer() {
 
     return ( 
         <footer>
-            <img src={logo}/>
+            <img src={logo} alt="Logo"/>
             <a href='/contact'>{translation.contactBtn}</a>
             <p>Creat de Buza Cristian</p>
         </footer>

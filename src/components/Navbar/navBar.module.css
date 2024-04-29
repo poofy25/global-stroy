@@ -124,17 +124,17 @@ nav.small > .logoBar::before{
     border-radius: 999px;
 }
 
-nav.true .logoBar > a{
+nav.truee .logoBar > a{
     filter: invert() brightness(100);
 }
-nav.true .navigationBar {
+nav.truee .navigationBar {
     background: rgb(30,28,28);
 background: linear-gradient(180deg, rgba(30,28,28,0.5) 0%, rgba(0,212,255,0) 100%);
 }
-nav.true .navigationBar .call {
+nav.truee .navigationBar .call {
     filter: invert();
 }
-nav.true .navigationBar .menuBtn > div{
+nav.truee .navigationBar .menuBtn > div{
     background-color: #f7f7f7 ;
 }
 
